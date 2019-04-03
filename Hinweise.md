@@ -1,5 +1,12 @@
 # Allgemeine Hinweise
 
+## TLDR
+
+- Schicke mir deine Abgabe vor der Vorlesung als Zipdatei per Mail mit Betreff `PRG2 - Übung # - DEIN NAME`.
+- Gebe sie vor der Vorlesung oder beim nächsten Übungstermin auf Papier ab.
+- Jede Funktion braucht eine Typdefinition und einen Kommentar und jede Aufgabe Testfälle.
+- Dein Code muss kompilieren.
+
 ## Kontakt
 
 Lars Gröber
@@ -8,9 +15,11 @@ groeber.prg2@ki.cs.uni-frankfurt.de
 
 ## Abgabe
 
-Schicke bitte deine Abgabe als `.zip` Verzeichnis an die oben genannte E-Mail Adresse (Betreff: `PRG2 - Übung # - DEIN NAME`, z.B. `PRG2 - Übung 3 - Lars Gröber`) und gebe sie vor der Vorlesung auf Papier ab.
+Schicke bitte deine Abgabe als `.zip` Verzeichnis an die oben genannte E-Mail Adresse und gebe sie vor der Vorlesung auf Papier ab.
 
-Falls du deine Abgabe nicht rechtzeitig auf Papier abgeben kannst, bringe sie mir spätestens zum nächsten Übungstermin mit. Korrigieren tue ich sie jedoch erst, wenn sie mir auf Papier vorliegt.
+Nutze bitte als Betreff `PRG2 - Übung # - DEIN NAME` (z.B. `PRG2 - Übung 3 - Lars Gröber`).
+
+Falls du deine Abgabe nicht rechtzeitig auf Papier abgeben kannst, bringe sie mir spätestens zum **nächsten** Übungstermin mit (schicke sie aber trotzdem per Mail!). Korrigieren tue ich sie jedoch erst, wenn sie mir auf Papier vorliegt.
 
 Du kannst deine Abgabe in englisch oder deutsch verfassen, je nachdem was einfacher für dich ist.
 
@@ -51,7 +60,7 @@ factorial n = if n < 2 then 1 else n * factorial (n-1)
 
 #### Testfälle
 
-Für **jede** Haskell-Aufgabe müssen Testfälle angegeben werden.
+Für **jede** Haskell-Aufgabe müssen Testfälle angegeben werden (Hilfsfunktionen brauchen keine Testfälle).
 
 Am einfachsten geht das als Kommentar:
 
@@ -75,6 +84,6 @@ Du kannst auch Unittests schreiben und diese zu deiner Abgabe hinzufügen (als s
 
 #### Weiteres
 
-- Dein Programm muss kompilieren! Programme, die nicht kompiliert werden können, verlieren direkt 50% der Punkte. (Kommentiere Bereiche, die Fehler werfen, aus und schreibe dazu, warum sie nicht funktionieren).
-- Wenn du eine Aufgabe nicht lösen kannst, schreibe auf, was du dir überlegt hast, darauf gibt es auch Punkte!
+- Dein Programm **muss** kompilieren! Programme, die nicht kompiliert werden können, verlieren direkt 50% der Punkte. (Kommentiere Bereiche, die Fehler werfen, aus und schreibe dazu, warum sie nicht funktionieren).
+- Wenn du eine Aufgabe nicht lösen kannst, schreibe auf, was du dir überlegt hast. Darauf gibt es auch Punkte!
 - Nutze (außer anders in der Aufgabenstellung angeben) **englische** Funktion- und Variablennamen. Kommentare können englisch oder deutsch sein.
