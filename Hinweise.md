@@ -1,10 +1,10 @@
 # Allgemeine Hinweise
 
-## TLDR
+## TL;DR
 
 - Das Tutorium findet freitags von 14 bis 16 Uhr in Raum TODO statt.
 - Schicke mir deine Abgabe vor der Vorlesung als Zipdatei per Mail mit Betreff `PRG2 - Übung # - DEIN NAME`.
-- Gebe sie vor der Vorlesung oder beim nächsten Übungstermin auf Papier ab.
+- Gib sie vor der Vorlesung oder beim nächsten Übungstermin auf Papier ab.
 - Jede Funktion braucht eine Typdefinition und einen Kommentar und jede Aufgabe Testfälle.
 - Dein Code muss kompilieren.
 
@@ -22,7 +22,7 @@ Das erste Tutorium ist am 26.04. und das letzte am 19.07.
 
 ## Abgabe
 
-Schicke bitte deine Abgabe als `.zip` Verzeichnis an die oben genannte E-Mail Adresse und gebe sie vor der Vorlesung auf Papier ab.
+Schicke bitte deine Abgabe als `.zip` Verzeichnis an die oben genannte E-Mail Adresse und gib sie vor der Vorlesung auf Papier ab.
 
 Nutze bitte als Betreff `PRG2 - Übung # - DEIN NAME` (z.B. `PRG2 - Übung 3 - Lars Gröber`).
 
