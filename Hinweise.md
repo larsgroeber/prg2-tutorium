@@ -94,3 +94,4 @@ Du kannst auch Unittests schreiben und diese zu deiner Abgabe hinzufügen (als s
 - Dein Programm **muss** kompilieren! Programme, die nicht kompiliert werden können, verlieren direkt 50% der Punkte. (Kommentiere Bereiche, die Fehler werfen, aus und schreibe dazu, warum sie nicht funktionieren).
 - Wenn du eine Aufgabe nicht lösen kannst, schreibe auf, was du dir überlegt hast. Darauf gibt es auch Punkte!
 - Nutze (außer anders in der Aufgabenstellung angeben) **englische** Funktion- und Variablennamen. Kommentare können englisch oder deutsch sein.
+- Unleserliche Abgaben oder eindeutige Plagiate werden von mir nicht bewertet (erhalten also 0 Punkte).
