@@ -2,7 +2,7 @@
 
 ## TL;DR
 
-- Das Tutorium findet freitags von 14 bis 16 Uhr in Raum TODO statt.
+- Das Tutorium findet freitags von 14 bis 16 Uhr in Raum H10 statt.
 - Schicke mir deine Abgabe vor der Vorlesung als Zipdatei per Mail mit Betreff `PRG2 - Übung # - DEIN NAME`.
 - Gib sie vor der Vorlesung oder beim nächsten Übungstermin auf Papier ab.
 - Jede Funktion braucht eine Typdefinition und einen Kommentar und jede Aufgabe Testfälle.
@@ -10,13 +10,15 @@
 
 ## Kontakt
 
+Gruppe 17
+
 Lars Gröber
 
 groeber.prg2@ki.cs.uni-frankfurt.de
 
 ## Tutorium
 
-Das Tutorium findet jeden Freitag von 14 bis 16 Uhr in Raum TODO statt.
+Das Tutorium findet jeden Freitag von 14 bis 16 Uhr in Raum H10 statt.
 
 Das erste Tutorium ist am 26.04. und das letzte am 19.07.
 
