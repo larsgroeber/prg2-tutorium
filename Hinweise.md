@@ -2,7 +2,7 @@
 
 ## TL;DR
 
-- Das Tutorium findet freitags von 14 bis 16 Uhr in Raum TODO statt.
+- Das Tutorium findet freitags von 14 bis 16 Uhr in Raum H10 statt.
 - Schicke mir deine Abgabe vor der Vorlesung als Zipdatei per Mail mit Betreff `PRG2 - Übung # - DEIN NAME`.
 - Gib sie vor der Vorlesung oder beim nächsten Übungstermin auf Papier ab.
 - Jede Funktion braucht eine Typdefinition und einen Kommentar und jede Aufgabe Testfälle.
@@ -10,13 +10,15 @@
 
 ## Kontakt
 
+Gruppe 17
+
 Lars Gröber
 
 groeber.prg2@ki.cs.uni-frankfurt.de
 
 ## Tutorium
 
-Das Tutorium findet jeden Freitag von 14 bis 16 Uhr in Raum TODO statt.
+Das Tutorium findet jeden Freitag von 14 bis 16 Uhr in Raum H10 statt.
 
 Das erste Tutorium ist am 26.04. und das letzte am 19.07.
 
@@ -94,3 +96,4 @@ Du kannst auch Unittests schreiben und diese zu deiner Abgabe hinzufügen (als s
 - Dein Programm **muss** kompilieren! Programme, die nicht kompiliert werden können, verlieren direkt 50% der Punkte. (Kommentiere Bereiche, die Fehler werfen, aus und schreibe dazu, warum sie nicht funktionieren).
 - Wenn du eine Aufgabe nicht lösen kannst, schreibe auf, was du dir überlegt hast. Darauf gibt es auch Punkte!
 - Nutze (außer anders in der Aufgabenstellung angeben) **englische** Funktion- und Variablennamen. Kommentare können englisch oder deutsch sein.
+- Unleserliche Abgaben oder eindeutige Plagiate werden von mir nicht bewertet (erhalten also 0 Punkte).
