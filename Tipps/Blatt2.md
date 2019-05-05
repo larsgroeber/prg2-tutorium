@@ -10,10 +10,14 @@ Schaut euch die Tabelle im Skript an, die die Definitionen für die fünf Fälle
 
 ## Aufgabe 3
 
-Hier empfielt es sich, die Aufgabe am PC zu machen, dann könnt ihr einfach die letzte Zeile kopieren und editieren.
+Hier empfiehlt es sich, die Aufgabe am PC zu machen, dann könnt ihr einfach die letzte Zeile kopieren und editieren.
 
 Wichtig: Bei a) in *normaler* und nicht *applikativer* Reihenfolge auswerten, sonst endet die Auswertung nicht!
 
 Bei der b) auf jeden Fall eine Begründung dazu schreiben.
 
 Bei der c) schreibt ihr euch am besten einen Buchstaben unter jedes Argument, damit ihr wisst, welche ihr zusammen auswerten müsst.
+
+## Allgemein
+
+Denkt bei Teilaufgabe 2.b) und 3.d) an die Vorgaben (Typdefinitionen, Testfälle, Doku ist nicht notwendig).
