@@ -10,4 +10,4 @@ Bei dieser Aufgabe braucht ihr keine Notentheorie zu kennen, setzt einfach die V
 
 ## Aufgabe 3
 
-Auch diese Aufgabe könnt ihr nur auf Papier abgeben. Bei der c) müsst ihr die Anwendungsregel für mehrere Argumente verwenden.
+Auch diese Aufgabe könnt ihr nur auf Papier abgeben. Bei der c) müsst ihr die Anwendungsregel für mehrere Argumente verwenden. Ihr könnt eure Lösung mit `Prelude> :t` überprüfen. Auf die Lösung alleine gibt es natürlich keine Punkte.
