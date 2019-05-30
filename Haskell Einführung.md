@@ -136,4 +136,39 @@ Prelude> :t 'b'
 'b' :: Char
 ```
 
-Hier beschreibt `Num a` den Typparameter `a` als Zahl (Int, Integer, Float oder Double) und die Funktion `addThree` nimmt drei Parameter vom Typ `a` und gibt einen Wert vom Typ `a` zurück.
+Hier beschreibt `Num a` den Typparameter `a` als Zahl (Int, Integer, Float oder Double) und die Funktion `addThree` nimmt drei Parameter vom Typ `a` und gibt einen Wert vom Typ `a` zurück. Beachte, dass die Typen aller drei Parameter gleich sind.
+
+## Conditonals <a name="Conditonals"></a>
+
+Es gibt verschiedene Wege, unterschiedliche Fälle in einer Funktion abzufangen:
+
+### Guards <a name="Guards"></a>
+
+### Patternmatching <a name="Patternmatching"></a>
+
+Nehmen wir den [FizzBuzz Test](http://wiki.c2.com/?FizzBuzzTest), dann können wir diesen auf drei Arten lösen (wir betrachten hier nur den Fall für eine Zahl):
+
+### If/then <a name="IfCase"></a>
+
+```haskell
+-- If/then
+fizzBuzz :: Int -> String
+fizzBuzz a = if a `mod` 3 == 0 && a `mod` 7 == 0
+    then "fizzbuzz"
+    else
+      (if a `mod` 3 == 0
+        then "fizz"
+        else
+          (if a `mod` 7 == 0
+            then "buzz"
+            else show a))
+
+fizzBuzz a
+
+```
+
+## Listen <a name="Listen"></a>
+
+## List comprehensions <a name="Listcomprehensions"></a>
+
+## Data <a name="Listcomprehensions"></a>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+        <title>Aufgabe 3</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+        <link href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css" rel="stylesheet" type="text/css">
+        <style>
+.task-list-item { list-style-type: none; } .task-list-item-checkbox { margin-left: -20px; vertical-align: middle; }
+</style>
+        <style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        
+        <script src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script>
+    </head>
+    <body>
+        <h1 id="aufgabe-3">Aufgabe 3</h1>
+<h2 id="a">a)</h2>
+<pre><code><div>FV(\x -&gt; if y then \z -&gt; (x \y -&gt; y) else (\z -&gt; w) x)
+= FV(if y then \z-&gt;(x\y-&gt;y) else (\z-&gt;w)x) \{x}
+= (FV(y) ∪ FV(\z -&gt; (x \y -&gt; y)) ∪ FV((\z -&gt; w) x)) \{x}
+= ({y} ∪ (FV((x \y -&gt; y)\{z})) ∪ (FV(\z -&gt; w) ∪ FV(x))) \{x}
+= ({y} ∪ ((FV(x) ∪ FV(\y -&gt; y))\{z}) ∪ ((FV(w)\{z}) ∪ {x})) \{x}
+= ({y} ∪ (({x} ∪ (FV(y)\{y}))\{z}) ∪ (({w}\{z}) ∪ {x})) \{x}
+= ({y} ∪ (({x} ∪ ({y}\{y}))\{z}) ∪ (({w}\{z}) ∪ {x})) \{x}
+= ({y} ∪ (({x} ∪ ∅)\{z}) ∪ ({w} ∪ {x})) \{x}
+= ({y} ∪ ({x} ∪ {w,x})) \{x}
+= {y,x,w} \{x}
+= {y,w}
+</div></code></pre>
+<pre><code><div>GV(\x -&gt; if y then \z -&gt; (x \y -&gt; y) else (\z -&gt; w) x)
+= GV(if y then \z-&gt;(x\y-&gt;y) else (\z-&gt;w)x) ∪ {x}
+= (GV(y) ∪ GV(\z -&gt; (x \y -&gt; y)) ∪ GV((\z -&gt; w) x)) ∪ {x}
+= (∅ ∪ (GV((x \y -&gt; y) ∪ {z})) ∪ (GV(\z -&gt; w) ∪ GV(x))) ∪ {x}
+= (GV(x) ∪ GV(\y -&gt; y)) ∪ {z} ∪ (GV(w) ∪ {z} ∪ GV(x)) ∪ {x}
+= (∅ ∪ GV(y) ∪ {y}) ∪ {z} ∪ (∅ ∪ {z} ∪ ∅) ∪ {x}
+= (∅ ∪ ∅ ∪ {y}) ∪ {z} ∪ (∅ ∪ {z} ∪ ∅) ∪ {x}
+= {y, z, x}
+</div></code></pre>
+<h2 id="b">b)</h2>
+<pre><code><div>FV(let f x1 x2 =y1 (\x-&gt;x2)in let y1 = f w (f y2 y2) ,y2 =y1 in f)
+= FV(let f=\x1x2-&gt;y1(\x-&gt;x2)in let y1= f w (fy2y2) ,y2=y1in f)
+= (FV(\x1 x2 -&gt; y1 (\x -&gt; x2)) ∪ FV(let y1 = f w (f y2 y2),y2 = y1 in f))\{f}
+= ((FV(y1 (\x -&gt; x2))\{x1,x2}) ∪ ((FV(f w (f y2 y2)) ∪ FV(y1) ∪ FV(f))\{y1,y2}))\{f}
+= (((FV(y1) ∪ (FV(x2)\{x}))\{x1,x2}) ∪ ((FV(f) ∪ FV(w) ∪ FV(f y2 y2) ∪ FV(y1) ∪ FV(f))\{y1,y2}))\{f}
+= ((({y1} ∪ ({x2}\{x}))\{x1,x2}) ∪ ((({f} ∪ {w} ∪ FV(f) ∪ FV(y2) ∪ FV(y2)) ∪ {y1} ∪ {f})\{y1,y2}))\{f}
+= (({y1,x2} \ {x1,x2})  ∪  (({f}  ∪  {w}  ∪  {f}  ∪  {y2}  ∪  {y2}  ∪  {y1}  ∪  {f}) \ {y1,y2})) \ {f}
+= ({y1}  ∪  ({f, w, y2, y1} \ {y1, y2})) \ {f}
+= ({y1} ∪ {f,w})\{f}
+= {y1,w}
+</div></code></pre>
+<pre><code><div>GV(let f x1 x2 =y1 (\x-&gt;x2)in let y1 =f w(f y2 y2),y2 =y1 in f)
+= GV(let f =\x1 x2 -&gt;y1 (\x-&gt;x2)in let y1 =f w(f y2 y2),y2 =y1 in f)
+= GV(\x1 x2 -&gt; y1 (\x -&gt; x2)) ∪ GV(let y1 = f w (f y2 y2),y2 = y1 in f ) ∪{f}
+= GV(y1 (\x -&gt; x2)) ∪ {x1,x2} ∪ GV(f w (f y2 y2)) ∪ GV(y1) ∪ GV(f) ∪ {y1,y2} ∪ {f}
+= GV(y1) ∪ GV(\x -&gt; x2) ∪ {x1,x2} ∪ GV(f) ∪ GV(w) ∪ GV(f y2 y2) ∪ GV(y1) ∪ GV(f) ∪ {y1,y2} ∪ {f}
+= ∅ ∪ GV(x2) ∪ {x} ∪ {x1,x2} ∪ ∅ ∪ ∅ ∪ GV(f) ∪ GV(y2) ∪ GV(y2) ∪ ∅ ∪ ∅ ∪ {y1,y2} ∪ {f}
+= ∅ ∪ {x} ∪ {x1,x2} ∪ ∅ ∪ ∅ ∪ ∅ ∪ {y1,y2} ∪ {f}
+= {x, x1, x2, y1, y2, f}
+</div></code></pre>
+
+    </body>
+    </html>
