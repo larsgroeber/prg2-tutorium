@@ -11,7 +11,7 @@ Hier findet ihr Zusatzmaterial zum PRG2 Tutorium.
 - [Blatt 4](Tipps/Blatt4.md)
 - [Blatt 5](Tipps/Blatt5.md)
 - [Blatt 7](Tipps/Blatt7.md)
-- [Blatt 8](Tipps/Blatt8.md)
+- [Blatt 9](Tipps/Blatt9.md)
 
 ## Online Tutorials
 
