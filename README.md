@@ -6,12 +6,13 @@ Hier findet ihr Zusatzmaterial zum PRG2 Tutorium.
 
 ## Tipps
 
- * [Blatt 2](Tipps/Blatt2.md)
- * [Blatt 3](Tipps/Blatt3.md)
- * [Blatt 4](Tipps/Blatt4.md)
- * [Blatt 5](Tipps/Blatt5.md)
- * [Blatt 7](Tipps/Blatt7.md)
+- [Blatt 2](Tipps/Blatt2.md)
+- [Blatt 3](Tipps/Blatt3.md)
+- [Blatt 4](Tipps/Blatt4.md)
+- [Blatt 5](Tipps/Blatt5.md)
+- [Blatt 7](Tipps/Blatt7.md)
+- [Blatt 8](Tipps/Blatt8.md)
 
 ## Online Tutorials
 
-* http://learnyouahaskell.com/ (free)
+- http://learnyouahaskell.com/ (free)
